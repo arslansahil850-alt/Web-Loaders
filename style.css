@@ -2169,3 +2169,8 @@ html {
   scrollbar-width: thin;
   scrollbar-color: #7c5cff #10101a;
 }
+
+.my-logo-image{
+ width: 40px;
+ height: 40px;
+}
