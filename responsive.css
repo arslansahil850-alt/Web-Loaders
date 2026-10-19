@@ -1,0 +1,421 @@
+@media (max-width: 1100px) {
+  .hero {
+    gap: 32px;
+  }
+
+  .hero-visual {
+    min-height: 380px;
+  }
+
+  .loader-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .studio-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .studio-preview {
+    min-height: 300px;
+  }
+
+  .footer-main {
+    gap: 28px;
+  }
+}
+
+@media (max-width: 900px) {
+  .topbar {
+    padding: 14px 5%;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .top-nav {
+    position: absolute;
+    top: calc(100% + 1px);
+    left: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 14px 5% 22px;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.08);
+  }
+
+  .top-nav.active {
+    display: flex;
+  }
+
+  .top-nav>a,
+  .nav-others {
+    width: 100%;
+  }
+
+  .top-nav>a {
+    padding: 14px 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .nav-others {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .others-menu {
+    position: static;
+    display: none;
+    width: 100%;
+    margin-top: 8px;
+    box-shadow: none;
+    border-radius: 12px;
+  }
+
+  .nav-others.open .others-menu {
+    display: flex;
+  }
+
+  .top-actions {
+    margin-left: auto;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding-top: 65px;
+  }
+
+  .hero-content {
+    max-width: 760px;
+  }
+
+  .hero-visual {
+    width: 100%;
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .gallery-toolbar {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .search-box {
+    width: 100%;
+  }
+
+  .filter-list {
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 6px;
+  }
+
+  .filter-list button {
+    flex-shrink: 0;
+  }
+
+  .footer-main {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 650px) {
+  .container {
+    width: min(100% - 30px, 1200px);
+  }
+
+  .topbar {
+    padding: 12px 15px;
+  }
+
+  .brand {
+    gap: 8px;
+    font-size: 17px;
+  }
+
+  .brand img {
+    width: 34px;
+    height: 34px;
+  }
+
+  .top-actions {
+    gap: 8px;
+  }
+
+  .top-actions .button-text {
+    display: none;
+  }
+
+  .theme-toggle,
+  .menu-toggle {
+    width: 40px;
+    height: 40px;
+  }
+
+  .hero {
+    padding-top: 48px;
+    padding-bottom: 45px;
+    gap: 28px;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.4rem, 12vw, 4rem);
+    letter-spacing: -0.055em;
+  }
+
+  .hero-description {
+    font-size: 15px;
+    line-height: 1.75;
+  }
+
+  .hero-buttons {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .hero-buttons .button {
+    width: 100%;
+  }
+
+  .hero-visual {
+    min-height: 310px;
+    padding: 20px;
+  }
+
+  .hero-loader-stage {
+    min-height: 230px;
+  }
+
+  .hero-floating-card {
+    padding: 10px 12px;
+    font-size: 11px;
+  }
+
+  .hero-floating-card.card-top {
+    top: 12px;
+    right: 8px;
+  }
+
+  .hero-floating-card.card-bottom {
+    bottom: 12px;
+    left: 8px;
+  }
+
+  .stats-grid {
+    gap: 10px;
+  }
+
+  .stat-card {
+    padding: 16px 12px;
+  }
+
+  .stat-number {
+    font-size: 25px;
+  }
+
+  .stat-label {
+    font-size: 12px;
+  }
+
+  .section {
+    padding: 58px 0;
+  }
+
+  .section-title {
+    font-size: clamp(1.8rem, 8vw, 2.6rem);
+  }
+
+  .section-description {
+    font-size: 14px;
+  }
+
+  .loader-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .loader-card {
+    min-width: 0;
+    padding: 12px;
+    border-radius: 16px;
+  }
+
+  .loader-preview {
+    min-height: 130px;
+  }
+
+  .loader-card-title {
+    font-size: 13px;
+  }
+
+  .loader-card-description {
+    font-size: 11px;
+  }
+
+  .loader-card-actions {
+    gap: 6px;
+  }
+
+  .loader-card-actions button {
+    min-height: 36px;
+    padding: 7px 9px;
+    font-size: 11px;
+  }
+
+  .studio-layout {
+    gap: 18px;
+  }
+
+  .studio-controls,
+  .studio-preview-panel,
+  .code-panel {
+    padding: 18px;
+  }
+
+  .studio-preview {
+    min-height: 240px;
+  }
+
+  .control-row {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .control-row input,
+  .control-row select {
+    width: 100%;
+  }
+
+  .code-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .code-actions {
+    width: 100%;
+  }
+
+  .code-actions button {
+    flex: 1;
+  }
+
+  .code-output {
+    font-size: 12px;
+    white-space: pre;
+  }
+
+  .saved-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .cta-section {
+    padding: 30px 20px;
+  }
+
+  .cta-section h2 {
+    font-size: 27px;
+  }
+
+  .footer-main {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .footer-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .powered-by-section {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .powered-logo {
+    width: 35px;
+    height: 35px;
+  }
+
+  .modal-content {
+    width: calc(100% - 24px);
+    max-height: 85vh;
+    padding: 20px;
+  }
+
+  .toast {
+    right: 12px;
+    bottom: 12px;
+    left: 12px;
+    width: auto;
+    text-align: center;
+  }
+}
+
+@media (max-width: 380px) {
+  .brand {
+    font-size: 15px;
+  }
+
+  .top-actions {
+    gap: 5px;
+  }
+
+  .loader-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .loader-preview {
+    min-height: 150px;
+  }
+
+  .saved-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero-visual {
+    padding: 14px;
+  }
+}
+
+@media (hover: none) {
+  .loader-card:hover {
+    transform: none;
+  }
+
+  .button:hover {
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

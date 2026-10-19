@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0b0d14">
+    <meta name="description"
+        content="Explore 60 modern CSS loaders. Customize animations, copy CSS code, save favorites, and create beautiful loading experiences.">
+    <title>Modern CSS Loaders Lab | My Codelab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+    <div class="app-shell">
+
+        <header class="topbar">
+            <a href="#home" class="brand" aria-label="LoaderLab home">
+                <span class="brand-icon">
+                    <span></span><span></span><span></span><span></span>
+                </span>
+                <span class="brand-copy">
+                    <strong>Loader<span>Lab</span></strong>
+                    <small>CSS ANIMATION STUDIO</small>
+                </span>
+            </a>
+
+            <nav class="top-nav" id="topNav" aria-label="Main navigation">
+                <a href="#gallery" class="nav-link active">Explore</a>
+                <a href="#playground" class="nav-link">Playground</a>
+                <a href="#code" class="nav-link">Get Code</a>
+                <div class="nav-others">
+                    <button class="nav-link others-toggle" id="othersToggle" type="button" aria-expanded="false">
+                        Others
+                        <span class="dropdown-arrow">⌄</span>
+                    </button>
+                    <div class="others-menu" id="othersMenu">
+                        <a href="https://arslan-weblab.netlify.app/" target="_blank" rel="noopener noreferrer">My
+                            Portfolio</a>
+                        <a href="https://github.com/arslansahil850-alt" target="_blank"
+                            rel="noopener noreferrer">GitHub</a>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="top-actions">
+                <span class="header-count"><span class="status-dot"></span> 60 loaders</span>
+                <button class="icon-button theme-toggle" id="themeToggle" type="button" aria-label="Switch color theme"
+                    title="Switch theme">
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <circle cx="12" cy="12" r="4"></circle>
+                        <path
+                            d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42">
+                        </path>
+                    </svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path d="M20.5 14.3A8.5 8.5 0 0 1 9.7 3.5 8.6 8.6 0 1 0 20.5 14.3Z"></path>
+                    </svg>
+                </button>
+                <button class="icon-button mobile-menu-toggle" id="mobileMenuToggle" type="button"
+                    aria-label="Open navigation" aria-expanded="false">
+                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path d="M4 7h16M4 12h16M4 17h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </header>
+
+        <main id="home">
+            <section class="hero-section">
+                <div class="hero-content">
+                    <div class="eyebrow"><span class="eyebrow-mark"></span> THE CSS ANIMATION PLAYGROUND</div>
+                    <h1>Loading, but<br><span>make it beautiful.</span></h1>
+                    <p class="hero-description">
+                        Sixty handcrafted CSS loaders. Zero dependencies.
+                        Infinite possibilities for your next interface.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#gallery" class="primary-button">
+                            Explore the gallery
+                            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="M5 12h14m-6-6 6 6-6 6"></path>
+                            </svg>
+                        </a>
+                        <a href="#playground" class="secondary-button">
+                            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="m8 5 11 7-11 7V5Z"></path>
+                            </svg>
+                            Open playground
+                        </a>
+                    </div>
+
+                    <div class="hero-meta">
+                        <div class="avatar-stack" aria-hidden="true">
+                            <span>C</span><span>CSS</span><span>{ }</span>
+                        </div>
+                        <p><strong>60 unique animations</strong><br>Made for modern interfaces</p>
+                    </div>
+                </div>
+
+                <div class="hero-visual" aria-label="Animated loader showcase">
+                    <div class="visual-orbit orbit-one"></div>
+                    <div class="visual-orbit orbit-two"></div>
+                    <div class="visual-orbit orbit-three"></div>
+                    <div class="visual-grid"></div>
+
+                    <div class="floating-code code-one">
+                        <span class="code-dot"></span> CSS only
+                    </div>
+                    <div class="floating-code code-two">
+                        <span class="code-bracket">&lt;/&gt;</span> Copy ready
+                    </div>
+
+                    <div class="hero-loader-wrap">
+                        <div class="hero-loader" aria-hidden="true">
+                            <span></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span>
+                        </div>
+                        <div class="hero-loader-core"></div>
+                    </div>
+
+                    <div class="visual-caption">
+                        <span class="caption-pulse"></span>
+                        <span>ANIMATION IN PROGRESS</span>
+                        <span class="caption-index">001 / 060</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="stats-strip" aria-label="Library statistics">
+                <div class="stat-item">
+                    <span class="stat-number">60<span>+</span></span>
+                    <span class="stat-label">Unique loaders</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">08</span>
+                    <span class="stat-label">Categories</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">100<span>%</span></span>
+                    <span class="stat-label">CSS animations</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">01</span>
+                    <span class="stat-label">Click to copy</span>
+                </div>
+            </section>
+
+            <section class="gallery-section section-block" id="gallery">
+                <div class="section-heading">
+                    <div>
+                        <div class="eyebrow"><span class="eyebrow-mark"></span> THE COLLECTION</div>
+                        <h2>Find your <span>perfect loader.</span></h2>
+                        <p>Explore, preview, customize, and take the code with you.</p>
+                    </div>
+                    <div class="gallery-heading-actions">
+                        <span class="result-count" id="resultCount">60 loaders</span>
+                        <button class="text-button" id="resetFilters" type="button">Reset filters
+                            <span>↺</span></button>
+                    </div>
+                </div>
+
+                <div class="gallery-toolbar">
+                    <label class="search-box" for="loaderSearch">
+                        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <circle cx="10.8" cy="10.8" r="6.8"></circle>
+                            <path d="m16 16 4.5 4.5"></path>
+                        </svg>
+                        <input id="loaderSearch" type="search" placeholder="Search loaders..." autocomplete="off">
+                        <kbd>/</kbd>
+                    </label>
+
+                </div>
+
+                <div class="filter-row" id="categoryFilters" aria-label="Filter loaders by category">
+                    <button type="button" class="filter-chip active" data-category="all" aria-pressed="true">All loaders
+                        <span>60</span></button>
+                    <button type="button" class="filter-chip" data-category="spinners"
+                        aria-pressed="false">Spinners</button>
+                    <button type="button" class="filter-chip" data-category="dots" aria-pressed="false">Dots</button>
+                    <button type="button" class="filter-chip" data-category="rings" aria-pressed="false">Rings</button>
+                    <button type="button" class="filter-chip" data-category="bars" aria-pressed="false">Bars</button>
+                    <button type="button" class="filter-chip" data-category="shapes"
+                        aria-pressed="false">Shapes</button>
+                    <button type="button" class="filter-chip" data-category="text" aria-pressed="false">Text</button>
+                    <button type="button" class="filter-chip" data-category="skeletons"
+                        aria-pressed="false">Skeletons</button>
+                    <button type="button" class="filter-chip" data-category="creative"
+                        aria-pressed="false">Creative</button>
+                    <button type="button" class="filter-chip favorites-filter" data-category="favorites"
+                        aria-pressed="false">
+                        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <path
+                                d="M20.8 8.8c0 5-8.8 10.1-8.8 10.1S3.2 13.8 3.2 8.8A4.6 4.6 0 0 1 12 6.4a4.6 4.6 0 0 1 8.8 2.4Z">
+                            </path>
+                        </svg>
+
+                    </button>
+                </div>
+
+                <div class="active-filter-summary" id="activeFilterSummary" aria-live="polite">
+                    Showing all loaders
+                </div>
+
+                <div class="loader-grid" id="loaderGrid" aria-live="polite"></div>
+
+                <div class="empty-state" id="emptyState" hidden>
+                    <div class="empty-icon">⌕</div>
+                    <h3>No loaders found</h3>
+                    <p>Try another search term or clear your filters.</p>
+                    <button class="primary-button" id="clearSearch" type="button">Clear filters</button>
+                </div>
+
+                <div class="gallery-footer">
+                    <p>Showing <strong id="visibleCount">0</strong> of 60 animations</p>
+                    <button class="secondary-button" id="showAllLoaders" type="button">Show all loaders</button>
+                </div>
+            </section>
+
+            <section class="playground-section section-block" id="playground">
+                <div class="section-heading">
+                    <div>
+                        <div class="eyebrow"><span class="eyebrow-mark"></span> YOUR CREATIVE SPACE</div>
+                        <h2>The <span>playground.</span></h2>
+                        <p>Choose a loader, fine-tune its appearance, and preview the result live.</p>
+                    </div>
+                    <span class="studio-badge"><span class="status-dot"></span> LIVE STUDIO</span>
+                </div>
+
+                <div class="playground-layout">
+                    <div class="studio-preview-panel">
+                        <div class="panel-topline">
+                            <div class="window-dots"><span></span><span></span><span></span></div>
+                            <span>LIVE PREVIEW</span>
+                            <button class="icon-button small-icon-button" id="refreshPreview" type="button"
+                                aria-label="Restart animation" title="Restart animation">
+                                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                    <path d="M20 7v5h-5M4 17v-5h5"></path>
+                                    <path d="M6.1 9A6.5 6.5 0 0 1 17 6l3 6M4 12l3 6a6.5 6.5 0 0 0 10.9-3"></path>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="studio-canvas" id="studioCanvas">
+                            <div class="studio-loader" id="studioLoader" aria-label="Selected loader preview">
+                                <div class="loader-spinner" aria-hidden="true"><span></span></div>
+                            </div>
+                            <p class="preview-status" id="previewStatus">Preview updates as you customize</p>
+                        </div>
+
+                        <div class="preview-footer">
+                            <div>
+                                <span class="preview-overline">CURRENT SELECTION</span>
+                                <h3 id="selectedLoaderName">Classic Spinner</h3>
+                            </div>
+                            <span class="selection-tag" id="selectedLoaderCategory">SPINNERS</span>
+                        </div>
+                    </div>
+
+                    <aside class="studio-controls-panel">
+                        <div class="controls-heading">
+                            <div>
+                                <span class="preview-overline">CUSTOMIZATION</span>
+                                <h3>Make it yours.</h3>
+                            </div>
+                            <button class="text-button" id="resetCustomization" type="button">Reset</button>
+                        </div>
+
+                        <div class="control-group">
+                            <label for="studioLoaderSelect">Loader design</label>
+                            <select id="studioLoaderSelect">
+                                <option value="spinner-01">Classic Spinner</option>
+                            </select>
+                        </div>
+
+                        <div class="control-group">
+                            <div class="control-label-row">
+                                <label for="loaderColor">Primary color</label>
+                                <span id="loaderColorValue">#8B5CF6</span>
+                            </div>
+                            <div class="color-control">
+                                <input id="loaderColor" type="color" value="#8B5CF6" aria-label="Choose loader color">
+                                <div class="color-presets" id="colorPresets">
+                                    <button type="button" data-color="#8B5CF6" style="--swatch:#8B5CF6"
+                                        aria-label="Purple"></button>
+                                    <button type="button" data-color="#22D3EE" style="--swatch:#22D3EE"
+                                        aria-label="Cyan"></button>
+                                    <button type="button" data-color="#F472B6" style="--swatch:#F472B6"
+                                        aria-label="Pink"></button>
+                                    <button type="button" data-color="#34D399" style="--swatch:#34D399"
+                                        aria-label="Green"></button>
+                                    <button type="button" data-color="#FBBF24" style="--swatch:#FBBF24"
+                                        aria-label="Yellow"></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <div class="control-label-row">
+                                <label for="loaderSize">Loader size</label>
+                                <output id="loaderSizeValue" for="loaderSize">64px</output>
+                            </div>
+                            <input class="range-control" id="loaderSize" type="range" min="24" max="120" value="64">
+                            <div class="range-labels"><span>Small</span><span>Large</span></div>
+                        </div>
+
+                        <div class="control-group">
+                            <div class="control-label-row">
+                                <label for="loaderSpeed">Animation speed</label>
+                                <output id="loaderSpeedValue" for="loaderSpeed">1.0s</output>
+                            </div>
+                            <input class="range-control" id="loaderSpeed" type="range" min="3" max="30" value="10">
+                            <div class="range-labels"><span>Fast</span><span>Slow</span></div>
+                        </div>
+
+                        <div class="control-group">
+                            <label for="canvasBackground">Preview background</label>
+                            <select id="canvasBackground">
+                                <option value="auto">Automatic</option>
+                                <option value="dark">Dark</option>
+                                <option value="light">Light</option>
+                                <option value="gradient">Gradient</option>
+                                <option value="transparent">Transparent</option>
+                            </select>
+                        </div>
+
+                        <div class="control-group">
+                            <label for="loadingLabel">Loading text</label>
+                            <input id="loadingLabel" type="text" maxlength="40" placeholder="Loading..."
+                                value="Loading...">
+                        </div>
+
+                        <label class="switch-row" for="showLoadingText">
+                            <span><strong>Show loading text</strong><small>Display a caption beneath the
+                                    loader</small></span>
+                            <input id="showLoadingText" type="checkbox">
+                            <span class="switch-ui"></span>
+                        </label>
+
+                        <label class="switch-row" for="pauseAnimation">
+                            <span><strong>Pause animation</strong><small>Freeze the current preview</small></span>
+                            <input id="pauseAnimation" type="checkbox">
+                            <span class="switch-ui"></span>
+                        </label>
+
+                        <button class="primary-button full-button" id="openCodeFromStudio" type="button">
+                            View generated code
+                            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="M8 5 3 12l5 7m8-14 5 7-5 7m-2-16-4 18"></path>
+                            </svg>
+                        </button>
+                    </aside>
+                </div>
+            </section>
+
+            <section class="code-section section-block" id="code">
+                <div class="section-heading">
+                    <div>
+                        <div class="eyebrow"><span class="eyebrow-mark"></span> READY FOR DEVELOPMENT</div>
+                        <h2>From preview <span>to production.</span></h2>
+                        <p>Get the code for your selected loader and integrate it into your project.</p>
+                    </div>
+                    <span class="code-language-badge">HTML + CSS</span>
+                </div>
+
+                <div class="code-workspace">
+                    <div class="code-main-panel">
+                        <div class="code-toolbar">
+                            <div class="code-tabs" role="tablist" aria-label="Code language">
+                                <button class="code-tab active" id="htmlTab" data-code-tab="html" type="button"
+                                    role="tab" aria-selected="true">HTML</button>
+                                <button class="code-tab" id="cssTab" data-code-tab="css" type="button" role="tab"
+                                    aria-selected="false">CSS</button>
+                            </div>
+                            <button class="copy-code-button" id="copyCode" type="button">
+                                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                    <rect x="8" y="8" width="12" height="12" rx="2"></rect>
+                                    <path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"></path>
+                                </svg>
+                                Copy code
+                            </button>
+                        </div>
+                        <div class="code-editor">
+                            <div class="code-gutter" id="codeGutter" aria-hidden="true">1</div>
+                            <pre class="code-output"><code id="codeOutput" class="language-html">&lt;div class="loader-spinner"&gt;
+  &lt;span&gt;&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+                        </div>
+                        <div class="code-bottomline">
+                            <span><span class="status-dot"></span> Ready to copy</span>
+                            <span id="codeLineCount">3 lines</span>
+                        </div>
+                    </div>
+
+                    <aside class="code-info-panel">
+                        <div class="code-info-icon">
+                            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="M12 3v18M3 12h18"></path>
+                                <circle cx="12" cy="12" r="9"></circle>
+                            </svg>
+                        </div>
+                        <h3>Built for your workflow.</h3>
+                        <p>Lightweight animations designed to fit into your own projects without external animation
+                            libraries.</p>
+                        <div class="code-feature"><span>✓</span> Pure CSS animations</div>
+                        <div class="code-feature"><span>✓</span> Easy to customize</div>
+                        <div class="code-feature"><span>✓</span> Responsive sizing</div>
+                        <div class="code-feature"><span>✓</span> Reduced-motion support</div>
+                        <button class="secondary-button full-button" id="downloadCode" type="button">
+                            Download code
+                            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="M12 3v12m-5-5 5 5 5-5M4 17v3h16v-3"></path>
+                            </svg>
+                        </button>
+                    </aside>
+                </div>
+            </section>
+
+            <section class="cta-section">
+                <div class="cta-glow"></div>
+                <div class="cta-content">
+                    <span class="eyebrow"><span class="eyebrow-mark"></span> YOUR NEXT PROJECT STARTS HERE</span>
+                    <h2>Small details.<br><span>Big impressions.</span></h2>
+                    <p>Give every loading moment a little more personality.</p>
+                    <a href="#gallery" class="primary-button">
+                        Find your next loader
+                        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <path d="M5 12h14m-6-6 6 6-6 6"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="cta-decoration" aria-hidden="true">
+                    <div class="cta-ring"></div>
+                    <div class="cta-ring"></div>
+                    <div class="cta-ring"></div>
+                    <div class="cta-center"></div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="footer-main">
+                <a href="#home" class="brand footer-brand" aria-label="LoaderLab home">
+                    <span class="brand-icon">
+                        <span></span><span></span><span></span><span></span>
+                    </span>
+                    <span class="brand-copy">
+                        <strong>Loader<span>Lab</span></strong>
+                        <small>CSS ANIMATION STUDIO</small>
+                    </span>
+                </a>
+
+                <p class="footer-description">
+                    A collection of modern CSS loaders built for creative developers.
+                </p>
+
+                <div class="footer-links">
+                    <a href="https://arslan-weblab.netlify.app/" target="_blank" rel="noopener noreferrer">My
+                        Portfolio</a>
+                    <a href="https://github.com/arslansahil850-alt" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+            </div>
+
+            <div class="powered-by-section">
+                <span class="powered-label">POWERED BY</span>
+                <a class="powered-brand" href="https://arslan-weblab.netlify.app/" target="_blank"
+                    rel="noopener noreferrer" aria-label="My Codelab by Arslan">
+
+                    <span class="powered-brand-text">Arslan Weblab</span>
+                </a>
+            </div>
+
+            <div class="footer-bottom">
+                <span>© <span id="currentYear">2026</span> LoaderLab</span>
+                <span>Designed and developed by Arslan</span>
+                <a href="#home">Back to top ↑</a>
+            </div>
+        </footer>
+
+    </div>
+
+    <div class="toast-container" id="toastContainer" aria-live="polite" aria-atomic="true"></div>
+
+    <div class="modal-backdrop" id="codeModal" hidden>
+        <section class="code-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+            <div class="modal-header">
+                <div>
+                    <span class="preview-overline">LOADER DETAILS</span>
+                    <h2 id="modalTitle">Classic Spinner</h2>
+                </div>
+                <button class="icon-button" id="closeCodeModal" type="button" aria-label="Close dialog">×</button>
+            </div>
+            <div class="modal-preview" id="modalPreview"></div>
+            <p class="modal-description" id="modalDescription">A clean, versatile loader for modern interfaces.</p>
+            <div class="modal-actions">
+                <button class="secondary-button" id="modalCustomize" type="button">Customize in studio</button>
+                <button class="primary-button" id="modalCopyCode" type="button">Copy CSS code</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
